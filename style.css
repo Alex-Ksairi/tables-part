@@ -1,0 +1,139 @@
+/* resetting css */
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* styling starts right here */
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    height: 200vh;
+    padding: 40px;
+}
+
+.main {
+    /* width: 90%; */
+    height: 50vh;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-top: 2.5px solid lightgray;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 12px #333333; */
+    text-align: left;
+}
+
+.main:hover {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #666666;
+}
+
+.main caption {
+    /* line-height: 50px; */
+    text-align: left;
+    font-size: 3rem;
+    color: rgb(131, 52, 131);
+    text-decoration: underline rgb(131, 52, 131);
+    text-underline-position: under;
+}
+
+img {
+    width: 25px;
+    /* padding: 5px; */
+}
+
+.main tr td:nth-of-type(2) img {
+    width: 50px;
+    background: white;
+    border: solid 1px lightgray;
+    border-radius: 50%;
+}
+
+.main tr td:nth-of-type(2):hover img {
+    box-shadow: 3px 3px 10px gray;
+    background: lightgray;
+}
+
+.main tr td:nth-of-type(7) img {
+    padding-right: 2px;
+    vertical-align: middle;
+}
+
+.main tr td:nth-of-type(5), .main tr td:nth-of-type(6) {
+    text-align: right;
+}
+
+tr, th, td {
+    border-bottom: 1px solid #000000;
+    padding: 10px 20px;
+}
+
+td {
+    position: relative;
+}
+
+tr:nth-of-type(1n+2):hover {
+    background: lavender;
+    box-shadow: 3px 3px 3px lavender, -3px -3px 10px lavender;
+    /* transform: scale(1.1); */
+}
+
+/* .main tr td:nth-of-type(5), .main tr td:nth-of-type(6) {
+    text-align: right;
+} */
+
+/* drop manu */
+tr td:nth-of-type(8) a nav {
+    display: none;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+tr td:nth-of-type(8) a {
+    padding: 10px;
+}
+
+tr td:nth-of-type(8) a nav li {
+    padding: 10px;
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+tr td:nth-of-type(8) a nav li:hover {
+    box-shadow: 6px 6px 9px gray, -6px -6px 9px gray;
+}
+
+tr td:nth-of-type(8) a:hover nav {
+    display: block;
+    transition: all 1s;
+    box-shadow: 6px 6px 9px gray, -6px -6px 9px gray;
+}
+
+/* sticky header */
+.sticky th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: lightgray;
+}
+
+/* .sticky th::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+} */
